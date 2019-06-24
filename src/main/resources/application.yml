@@ -4,3 +4,8 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: https://pingpong-discovery.herokuapp.com/eureka
+    instance:
+#      hostname: cloud-pong-service.herokuapp.com
+      preferIpAddress: true
+      nonSecurePortEnabled: false
+      securePortEnabled: false

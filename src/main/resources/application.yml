@@ -4,5 +4,6 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: https://discovery-cheerful-fox.cfapps.io
-    instance:
-      hostname: ${vcap.application.uris[0]}
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80

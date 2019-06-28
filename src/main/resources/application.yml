@@ -1,9 +1,0 @@
-eureka:
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: https://discovery-cheerful-fox.cfapps.io/eureka
-  instance:
-    hostname: ${vcap.application.uris[0]}
-    nonSecurePort: 80
